@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+$font-family-sans-serif: 'Roboto Slab', serif !default;
+$font-weight-base: 400 !default;
+
+$spacer: 1rem !default;
+// $headings-margin-bottom: $spacer * 0.5 !default;
+$headings-margin-bottom: $spacer * 0.5 !default;
+$headings-font-family: 'Libre Franklin', sans-serif !default;
+// $headings-font-style: null !default;
+$headings-font-style: italic !default;
+$headings-font-weight: 600 !default;
+// $headings-line-height: 1.2 !default;
+$headings-line-height: 1 !default;
+$headings-color: inherit !default;
+
+$display-font-family: 'Titillium Web', sans-serif !default;
+$display-font-style: null !default;
+$display-font-weight: 900 !default;
+$display-line-height: $headings-line-height !default;
+
+$font-size-base: 1rem !default;
+// $line-height-base: 1.5 !default;
+$line-height-base: 1.2 !default;
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    text-transform: uppercase;
+}

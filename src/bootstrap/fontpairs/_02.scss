@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Pacifico&family=Quicksand:wght@300..700&display=swap');
+
+$font-family-sans-serif: 'Quicksand', sans-serif !default;
+$font-weight-base: 400 !default;
+
+$spacer: 1rem !default;
+// $headings-margin-bottom: $spacer * 0.5 !default;
+$headings-margin-bottom: $spacer * 0.5 !default;
+$headings-font-family: 'Pacifico', cursive !default;
+// $headings-font-style: null !default;
+$headings-font-style: null !default;
+$headings-font-weight: 500 !default;
+// $headings-line-height: 1.2 !default;
+$headings-line-height: 1 !default;
+$headings-color: inherit !default;
+
+$display-font-family: 'Leckerli One', cursive !default;
+$display-font-style: null !default;
+$display-font-weight: 900 !default;
+$display-line-height: $headings-line-height !default;
+
+$font-size-base: 1rem !default;
+// $line-height-base: 1.5 !default;
+$line-height-base: 1.2 !default;
