@@ -51,21 +51,31 @@ npm run build
 vue-bootstrap-sass-starter/
 │
 ├── public/                # Static public assets
-├── src/
-│   ├── assets/
-│   │   └── scss/          # Custom Sass files and Bootstrap overrides
-│   ├── components/        # Vue components
-│   ├── router/            # Vue Router configuration
-│   ├── views/             # Vue views (pages)
-│   └── App.vue            # Root component
+│   └── favicon.ico        # Example favicon for the app
+├── src/                   # Main application source code
+│   ├── assets/            # Project assets such as images, fonts, etc.
+│   │   └── bootstrap/     # Bootstrap-specific Sass files for customization
+│   ├── components/        # Vue components, reusable across the application
+│   ├── composables/       # Vue composables (reusable logic with Composition API)
+│   ├── locales/           # Localization files for i18n support
+│   ├── router/            # Vue Router configuration, including route definitions
+│   ├── App.vue            # Root component of the application
+│   ├── i18n.js            # Internationalization (i18n) configuration
+│   └── main.js            # Application entry point, initializing Vue app
 │
-├── .gitignore             # Files and folders to be ignored by Git
-├── package.json           # Project metadata and dependencies
-├── README.md              # Project documentation
-└── vue.config.js          # Vue CLI configuration
+├── .eslintrc.cjs          # ESLint configuration for code linting and standards
+├── .gitignore             # Specifies which files and folders Git should ignore
+├── .prettierrc.json       # Prettier configuration for consistent code formatting
+├── index.html             # Main HTML file, serves as the entry point for the app
+├── jsconfig.json          # JavaScript configuration for IDE support (e.g., path aliases)
+├── LICENSE                # License for the project
+├── package-lock.json      # Auto-generated file for locking dependencies versions
+├── package.json           # Project metadata, dependencies, and scripts
+├── README.md              # Project documentation, instructions for setup and usage
+└── vite.config.js         # Vite configuration file for development/build tooling
 ```
 
-## Vite configuration
+## Configuration
 
 ### 1. Environment Variables
 Vite supports environment variables defined in .env files. You can use these variables in your code with the import.meta.env syntax.
@@ -80,13 +90,12 @@ Access the variable in your code:
 const apiUrl = import.meta.env.VITE_API_URL
 ```
 
-> [!IMPORTANT]
-> ### Bootstrap Theming with Sass
-> You can customize Bootstrap's default styles by modifying the variables in `src/assets/bootstrap/_variables.scss`. This allows you to change colors, fonts, spacing, and other design aspects without overriding Bootstrap classes directly.
->
-> Example:
->
-> ```scss
-> // Change primary color
-> $primary: #ff6f61;
-> ```
+### 2. Bootstrap Theming with Sass
+You can customize Bootstrap's default styles by modifying the variables in `src/assets/bootstrap/_variables.scss`. This allows you to change colors, fonts, spacing, and other design aspects without overriding Bootstrap classes directly.
+
+Example:
+
+```scss
+// Change primary color
+$primary: #ff6f61;
+```
