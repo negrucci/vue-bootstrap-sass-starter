@@ -3,7 +3,7 @@ import { useI18n } from 'vue-i18n'
 
 export function useLanguageSwitcher() {
     const { locale } = useI18n()
-    const availableLocales = ref(['en', 'pt-BR'])
+    const availableLocales = ref(['en-US', 'pt-BR'])
     const savedLocale = localStorage.getItem('userLocale')
 
     if (savedLocale && availableLocales.value.includes(savedLocale)) {
