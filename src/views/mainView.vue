@@ -8,8 +8,10 @@ import dataComp from '../components/dataComp.vue'
 <template>
     <div class="container-fluid user-select-none">
         <div class="row row-cols-1 justify-content-center gap-3">
-            <toggleColorMode />
-            <toggleLanguage />
+            <div class="d-flex w-auto px-0">
+                <toggleColorMode />
+                <toggleLanguage />
+            </div>
             <fontComp class="col" />
             <dataComp class="col" />
         </div>
