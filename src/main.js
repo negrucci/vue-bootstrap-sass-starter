@@ -1,5 +1,5 @@
 import('@/assets/bootstrap/bootstrap.scss')
-import * as bootstrap from 'bootstrap';
+import('../node_modules/bootstrap/dist/js/bootstrap.bundle.min')
 
 import { createApp } from 'vue'
 import App from './App.vue'
