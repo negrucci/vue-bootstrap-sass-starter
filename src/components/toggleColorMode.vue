@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useBootstrapColorMode } from '@/composables/useBootstrapColorMode'
+import iconLightMode from './icons/iconLightMode.vue'
+import iconDarkMode from './icons/iconDarkMode.vue'
 
 const { bootstrapColorMode, toggleBootstrapColorMode } = useBootstrapColorMode()
 const animationState = ref(false)
@@ -13,24 +15,36 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="form-check form-switch my-auto" style="width: 90px">
-        <input
+    <div class="w-auto px-0">
+        <button 
             @click="toggleBootstrapColorMode()"
-            class="form-check-input"
-            :class="{ 'no-transition': !animationState }"
-            type="checkbox"
-            role="switch"
-            id="flexSwitchCheckColorMode"
-            :checked="bootstrapColorMode == 'dark'"
-        />
-        <label class="form-check-label text-capitalize" for="flexSwitchCheckColorMode">{{
-            bootstrapColorMode
-        }}</label>
+            type="button" data-bs-toggle="dropdown" aria-expanded="false"
+            class="btn border-0 p-2" :class="{ 'no-transition': !animationState }"
+        >
+            <iconLightMode v-if="bootstrapColorMode == 'light'" class="icon" width="42px" height="42px" />
+            <iconDarkMode v-if="bootstrapColorMode == 'dark'" class="icon" width="42px" height="42px" />
+        </button>
     </div>
 </template>
 
 <style scoped lang="scss">
 .no-transition {
     transition: none !important;
+}
+[data-bs-theme='light'] {
+    .btn:hover {
+        background-color: rgba(var(--bs-dark-rgb), 0.2);
+    }
+    .icon {
+        fill: var(--bs-dark);
+    }
+}
+[data-bs-theme='dark'] {
+    .btn:hover {
+        background-color: rgba(var(--bs-light-rgb), 0.2);
+    }
+    .icon {
+        fill: var(--bs-light);
+    }
 }
 </style>
