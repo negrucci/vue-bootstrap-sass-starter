@@ -1,12 +1,12 @@
-import enMain from '@/locales/en/main.json'
-import ptMain from '@/locales/ptBR/main.json'
+import enUSMain from '@/locales/enUS/main.json'
+import ptBRMain from '@/locales/ptBR/main.json'
 
 const messages = {
-    en: {
-        main: enMain
+    'en-US': {
+        main: enUSMain
     },
     'pt-BR': {
-        main: ptMain
+        main: ptBRMain
     }
 }
 
