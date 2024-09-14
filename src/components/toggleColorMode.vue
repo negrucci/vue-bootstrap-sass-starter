@@ -21,8 +21,8 @@ onMounted(() => {
             type="button" data-bs-toggle="dropdown" aria-expanded="false"
             class="btn border-0 p-2" :class="{ 'no-transition': !animationState }"
         >
-            <iconLightMode v-if="bootstrapColorMode == 'light'" class="icon" width="42px" height="42px" />
-            <iconDarkMode v-if="bootstrapColorMode == 'dark'" class="icon" width="42px" height="42px" />
+            <iconLightMode v-if="bootstrapColorMode == 'light'" class="icon" width="32px" height="32px" />
+            <iconDarkMode v-if="bootstrapColorMode == 'dark'" class="icon" width="32px" height="32px" />
         </button>
     </div>
 </template>
@@ -33,7 +33,7 @@ onMounted(() => {
 }
 [data-bs-theme='light'] {
     .btn:hover {
-        background-color: rgba(var(--bs-dark-rgb), 0.2);
+        background-color: rgba(var(--bs-dark-rgb), 0.08);
     }
     .icon {
         fill: var(--bs-dark);
@@ -41,7 +41,7 @@ onMounted(() => {
 }
 [data-bs-theme='dark'] {
     .btn:hover {
-        background-color: rgba(var(--bs-light-rgb), 0.2);
+        background-color: rgba(var(--bs-light-rgb), 0.08);
     }
     .icon {
         fill: var(--bs-light);

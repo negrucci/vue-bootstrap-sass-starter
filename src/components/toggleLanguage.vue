@@ -22,7 +22,7 @@ onMounted(() => {
             aria-expanded="false"
             :class="{ 'no-transition': !animationState }"
         >
-            <iconWorld class="icon" width="42px" height="42px" />
+            <iconWorld class="icon" width="32px" height="32px" />
         </button>
         <ul class="dropdown-menu p-1">
             <li @click="changeLanguage(lang)" v-for="lang in availableLocales" :key="lang">
@@ -44,7 +44,7 @@ onMounted(() => {
 }
 [data-bs-theme='light'] {
     .btn:hover {
-        background-color: rgba(var(--bs-dark-rgb), 0.2);
+        background-color: rgba(var(--bs-dark-rgb), 0.08);
     }
     .icon {
         fill: var(--bs-dark);
@@ -52,7 +52,7 @@ onMounted(() => {
 }
 [data-bs-theme='dark'] {
     .btn:hover {
-        background-color: rgba(var(--bs-light-rgb), 0.2);
+        background-color: rgba(var(--bs-light-rgb), 0.08);
     }
     .icon {
         fill: var(--bs-light);
