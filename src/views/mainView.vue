@@ -1,19 +1,15 @@
 <script setup>
-import toggleLanguage from '@/components/toggleLanguage.vue'
-import toggleColorMode from '@/components/toggleColorMode.vue'
-import fontComp from '../components/fontComp.vue'
-import dataComp from '../components/dataComp.vue'
+import fontComp from '@/components/fontComp.vue'
+import dataComp from '@/components/dataComp.vue'
+import mainHeader from '@/components/mainHeader.vue'
 </script>
 
 <template>
+    <mainHeader />
     <div class="container-fluid user-select-none">
         <div class="row row-cols-1 justify-content-center gap-3">
-            <div class="d-flex w-auto px-0">
-                <toggleColorMode />
-                <toggleLanguage />
-            </div>
-            <fontComp class="col" />
-            <dataComp class="col" />
+            <fontComp class="col"/>
+            <dataComp class="col"/>
         </div>
     </div>
 </template>
