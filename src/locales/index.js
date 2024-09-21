@@ -1,12 +1,12 @@
-import enUSMain from '@/locales/enUS/main.json'
-import ptBRMain from '@/locales/ptBR/main.json'
+import enUSMainHeader from '@/locales/enUS/mainHeader.json'
+import ptBRMainHeader from '@/locales/ptBR/mainHeader.json'
 
 const messages = {
     'en-US': {
-        main: enUSMain
+        mainHeader: enUSMainHeader
     },
     'pt-BR': {
-        main: ptBRMain
+        mainHeader: ptBRMainHeader
     }
 }
 
