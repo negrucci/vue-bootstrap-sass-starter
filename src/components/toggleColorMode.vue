@@ -15,10 +15,10 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="w-auto px-0">
+    <div class="w-auto px-0" data-bs-toggle="tooltip" data-bs-title="color theme" data-bs-placement="bottom">
         <button 
             @click="toggleBootstrapColorMode()"
-            type="button" data-bs-toggle="dropdown" aria-expanded="false"
+            type="button" aria-expanded="false"
             class="btn border-0 p-2" :class="{ 'no-transition': !animationState }"
         >
             <iconLightMode v-if="bootstrapColorMode == 'light'" class="icon" width="32px" height="32px" />
