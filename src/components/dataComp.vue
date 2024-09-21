@@ -35,7 +35,7 @@ onMounted(() => {
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6 mx-auto">
+            <div class="col">
                 <div
                     v-for="{ id, fields } in airTableAPI.records"
                     :key="id"
